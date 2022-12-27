@@ -1,0 +1,29 @@
+{
+  "name": "octily--translation-creator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "bin": "./lib/index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/node-fetch": "^2.6.2",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.3",
+    "@types/inquirer": "^9.0.3",
+    "inquirer": "^8.2.5",
+    "nanospinner": "^1.1.0",
+    "node-fetch": "^2.6.7"
+  }
+}

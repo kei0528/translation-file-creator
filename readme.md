@@ -26,7 +26,16 @@ NOTION_TOKEN=secret_NOTION_INTEGRATION_TOKEN # Don't forget to put secret_ in th
 
 The database’s format must be like this ↓ If you don’t need all of these languages, you can just delete the column. It’s important, that the first column’s title is “**Key**”. An empty table row or an empty key might cause error.
 
-### 3. Getting database ID
+### 3. Connect with Integration
+
+1. Go to the database page in your workspace.
+2. Click the **`••`**on the top right corner of the page.
+3. At the bottom of the pop-up, click `Add connections`.
+4. Search for and select your integration in the `Search for connections...` menu.
+
+Your integration now has permission to edit the database.
+
+### 4. Getting database ID
 
 You can find this id from database’s share link.
 
@@ -34,7 +43,7 @@ Click on “Share” → “Copy link”. Then you copied something like this: h
 
 <img src="/public/images/screenshot.png" width="400">
 
-### 4. Starting program
+### 5. Starting program
 
 The program is made with TypeScript. So at first time, you need to install packages with `npm i`. If the installation is completed, you can hit `node .` to the console.
 
